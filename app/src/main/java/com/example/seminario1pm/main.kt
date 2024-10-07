@@ -57,6 +57,6 @@ fun ej4(cadena: String){
 fun ej5(ejercicio5: String){
     val aux: Int=0
     arrayOf(ejercicio5.split(","))
-    if
+
 }
 
