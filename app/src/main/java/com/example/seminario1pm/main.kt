@@ -5,7 +5,6 @@ fun main(){
     var distancia = 100
     var kiloms = 0.625
     var cadena = "reconocer"
-    var ejercicio5 = "Buenas tardes jefe"
 
     ej1(list)
 
@@ -14,6 +13,8 @@ fun main(){
     ej3(distancia)
 
     ej4(cadena)
+println()
+    println(ej5("Viva el vino",'i'))
 
 }
 
@@ -54,9 +55,13 @@ fun ej4(cadena: String){
     }
 }
 
-fun ej5(ejercicio5: String){
-    val aux: Int=0
-    arrayOf(ejercicio5.split(","))
-
+fun ej5(ejercicio5: String, letra: Char):Int{
+    var contador = 0
+     for(i in 0..ejercicio5.length-1){
+         if (ejercicio5[i].equals(letra)){
+             contador++
+         }
+     }
+    return contador
 }
 
