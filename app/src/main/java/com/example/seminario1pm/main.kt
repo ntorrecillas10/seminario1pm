@@ -4,12 +4,17 @@ fun main(){
     var list = intArrayOf(6,3,6,7,6,8,9,10,7)
     var distancia = 100
     var kiloms = 0.625
+    var cadena = "reconocer"
+    var ejercicio5 = "Buenas tardes jefe"
 
     ej1(list)
 
     ej2(list)
 
     ej3(distancia)
+
+    ej4(cadena)
+
 }
 
 fun ej1(lista: IntArray){
@@ -30,12 +35,28 @@ fun ej2(lista: IntArray){
 
 
 fun ej3(distancia: Int){
-    var distanciaKMS: Int=0
-    distanciaKMS= distancia*Int(0.625)
+    var distanciaKMS: Float=0f
+    distanciaKMS= (distancia*0.625).toFloat()
+    println(distanciaKMS)
     }
 
 fun Int(d: Double): Int {
  return 0
 }
 
+fun ej4(cadena: String){
+    val aux = cadena.reversed()
+
+    if (aux.equals(cadena)){
+        print("Es un palíndromo")
+    }else{
+        print("No es un palíndromo")
+    }
+}
+
+fun ej5(ejercicio5: String){
+    val aux: Int=0
+    arrayOf(ejercicio5.split(","))
+    if
+}
 
